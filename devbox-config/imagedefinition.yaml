@@ -4,6 +4,22 @@ image: microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc
 
 tasks:
   - name: ~/winget
-    description: Install AZD
+    description: Install Visual Studio Code
     parameters:
-      package: Microsoft.Azd
+      package: Microsoft.VisualStudioCode
+  - name: ~/winget
+    description: Install IntelliJ IDEA Ultimate
+    parameters:
+      package: JetBrains.IntelliJIDEA.Ultimate
+  - name: ~/winget
+    description: Install Azure CLI
+    parameters:
+      package: Microsoft.AzureCLI
+  - name: ~/winget
+    description: Install Terraform
+    parameters:
+      package: HashiCorp.Terraform
+  - name: ~/winget
+    description: Install Bicep CLI
+    parameters:
+      package: Microsoft.Bicep
