@@ -1,12 +1,9 @@
+$schema: "1.0"
+name: "CustomDevBoxImage"
+image: microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc
 
-image:
-  version: 1.0.0
-  baseImage: "mcr.microsoft.com/devbox/base:latest"
-
-customizations:
-  packages:
-    - package: "Microsoft.VisualStudioCode"
-    - package: "JetBrains.IntelliJIDEA.Ultimate"
-    - package: "Microsoft.AzureCLI"
-    - package: "HashiCorp.Terraform"
-    - package: "Microsoft.Bicep"
+tasks:
+  - name: ~/winget
+    description: Install AZD
+    parameters:
+      package: Microsoft.Azd
