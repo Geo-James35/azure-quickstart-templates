@@ -1,0 +1,12 @@
+
+image:
+  version: 1.0.0
+  baseImage: "mcr.microsoft.com/devbox/base:latest"
+
+customizations:
+  packages:
+    - package: "Microsoft.VisualStudioCode"
+    - package: "JetBrains.IntelliJIDEA.Ultimate"
+    - package: "Microsoft.AzureCLI"
+    - package: "HashiCorp.Terraform"
+    - package: "Microsoft.Bicep"
